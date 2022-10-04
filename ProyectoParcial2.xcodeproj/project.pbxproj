@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0F384C28EC8E260058795E /* PerrosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0F384B28EC8E260058795E /* PerrosController.swift */; };
+		3D0F384E28EC8FD70058795E /* Perro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0F384D28EC8FD70058795E /* Perro.swift */; };
+		3D0F385028EC92600058795E /* CeldaPerroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0F384F28EC92600058795E /* CeldaPerroController.swift */; };
 		3DAE1EC728E5F5B20036AD6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE1EC628E5F5B20036AD6E /* AppDelegate.swift */; };
 		3DAE1EC928E5F5B20036AD6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE1EC828E5F5B20036AD6E /* ViewController.swift */; };
 		3DAE1ECC28E5F5B20036AD6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAE1ECA28E5F5B20036AD6E /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D0F384B28EC8E260058795E /* PerrosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerrosController.swift; sourceTree = "<group>"; };
+		3D0F384D28EC8FD70058795E /* Perro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perro.swift; sourceTree = "<group>"; };
+		3D0F384F28EC92600058795E /* CeldaPerroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPerroController.swift; sourceTree = "<group>"; };
 		3DAE1EC328E5F5B20036AD6E /* ProyectoParcial2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoParcial2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DAE1EC628E5F5B20036AD6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DAE1EC828E5F5B20036AD6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +109,9 @@
 				3DAE1ECD28E5F5B40036AD6E /* Assets.xcassets */,
 				3DAE1ECF28E5F5B40036AD6E /* LaunchScreen.storyboard */,
 				3DAE1ED228E5F5B40036AD6E /* Info.plist */,
+				3D0F384B28EC8E260058795E /* PerrosController.swift */,
+				3D0F384D28EC8FD70058795E /* Perro.swift */,
+				3D0F384F28EC92600058795E /* CeldaPerroController.swift */,
 			);
 			path = ProyectoParcial2;
 			sourceTree = "<group>";
@@ -257,6 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DAE1EC928E5F5B20036AD6E /* ViewController.swift in Sources */,
+				3D0F384C28EC8E260058795E /* PerrosController.swift in Sources */,
+				3D0F385028EC92600058795E /* CeldaPerroController.swift in Sources */,
+				3D0F384E28EC8FD70058795E /* Perro.swift in Sources */,
 				3DAE1EC728E5F5B20036AD6E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
