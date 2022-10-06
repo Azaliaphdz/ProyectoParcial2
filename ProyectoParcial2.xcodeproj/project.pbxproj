@@ -17,6 +17,9 @@
 		3DAE1ED128E5F5B40036AD6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAE1ECF28E5F5B40036AD6E /* LaunchScreen.storyboard */; };
 		3DAE1EDC28E5F5B40036AD6E /* ProyectoParcial2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE1EDB28E5F5B40036AD6E /* ProyectoParcial2Tests.swift */; };
 		3DAE1EE728E5F5B40036AD6E /* ProyectoParcial2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE1EE628E5F5B40036AD6E /* ProyectoParcial2UITests.swift */; };
+		3DB7961928EF27570004B196 /* DetallesPerroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7961828EF27570004B196 /* DetallesPerroController.swift */; };
+		3DB7961B28EF2A430004B196 /* Dato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7961A28EF2A430004B196 /* Dato.swift */; };
+		3DB7961D28EF2B560004B196 /* CeldaDatoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7961C28EF2B560004B196 /* CeldaDatoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		3DAE1EE228E5F5B40036AD6E /* ProyectoParcial2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoParcial2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DAE1EE628E5F5B40036AD6E /* ProyectoParcial2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoParcial2UITests.swift; sourceTree = "<group>"; };
 		3DAE1EE828E5F5B40036AD6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB7961828EF27570004B196 /* DetallesPerroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesPerroController.swift; sourceTree = "<group>"; };
+		3DB7961A28EF2A430004B196 /* Dato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dato.swift; sourceTree = "<group>"; };
+		3DB7961C28EF2B560004B196 /* CeldaDatoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaDatoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 				3D0F384B28EC8E260058795E /* PerrosController.swift */,
 				3D0F384D28EC8FD70058795E /* Perro.swift */,
 				3D0F384F28EC92600058795E /* CeldaPerroController.swift */,
+				3DB7961828EF27570004B196 /* DetallesPerroController.swift */,
+				3DB7961A28EF2A430004B196 /* Dato.swift */,
+				3DB7961C28EF2B560004B196 /* CeldaDatoController.swift */,
 			);
 			path = ProyectoParcial2;
 			sourceTree = "<group>";
@@ -266,8 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DAE1EC928E5F5B20036AD6E /* ViewController.swift in Sources */,
+				3DB7961D28EF2B560004B196 /* CeldaDatoController.swift in Sources */,
 				3D0F384C28EC8E260058795E /* PerrosController.swift in Sources */,
+				3DB7961928EF27570004B196 /* DetallesPerroController.swift in Sources */,
 				3D0F385028EC92600058795E /* CeldaPerroController.swift in Sources */,
+				3DB7961B28EF2A430004B196 /* Dato.swift in Sources */,
 				3D0F384E28EC8FD70058795E /* Perro.swift in Sources */,
 				3DAE1EC728E5F5B20036AD6E /* AppDelegate.swift in Sources */,
 			);
