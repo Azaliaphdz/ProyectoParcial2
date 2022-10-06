@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detalles Perro Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProyectoParcial2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DetallesPerroController" customModule="ProyectoParcial2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="136" id="Oll-1H-n1d">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="136" id="Oll-1H-n1d" customClass="CeldaDatoController" customModule="ProyectoParcial2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oll-1H-n1d" id="V9f-lX-hmq">
@@ -47,8 +47,16 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblDesc" destination="gv9-qq-0k4" id="EiX-85-G1e"/>
+                                            <outlet property="lblTitulo" destination="xao-ib-X7L" id="Dhy-3K-jbf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="IZw-Ia-tPc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="e2p-hN-fr0"/>
+                                </connections>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jlS-Tc-9yd">
                                 <rect key="frame" x="9" y="412" width="194" height="58"/>
@@ -222,6 +230,21 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imgColor1" destination="GdQ-TS-kmh" id="SPG-qO-11E"/>
+                        <outlet property="imgColor2" destination="3zK-de-rCl" id="sg3-aH-PMS"/>
+                        <outlet property="imgColor3" destination="nEq-kS-WU1" id="0jV-ja-E7T"/>
+                        <outlet property="imgColor4" destination="Ftw-pL-XN5" id="hfU-fp-T87"/>
+                        <outlet property="imgColor5" destination="83h-Qv-Xlz" id="Po3-bw-cxj"/>
+                        <outlet property="imgPrincipal" destination="xZq-dv-usP" id="rdO-OD-qKC"/>
+                        <outlet property="lblAltura" destination="E0H-Ju-ejo" id="NFd-EF-kXe"/>
+                        <outlet property="lblCaracter" destination="yla-bg-8nK" id="xO6-dZ-uIJ"/>
+                        <outlet property="lblEspe" destination="G4r-2P-RkR" id="41G-lA-udH"/>
+                        <outlet property="lblOrigen" destination="bLu-34-fEX" id="4yT-xQ-2ff"/>
+                        <outlet property="lblPelaje" destination="aua-Bj-2sf" id="lhi-20-6SC"/>
+                        <outlet property="lblPeso" destination="gCB-hT-4z4" id="Pvl-3H-t2E"/>
+                        <outlet property="lblSabiasQue" destination="DLv-7S-Hgv" id="hKY-gh-j4U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -309,6 +332,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Razas de perros" id="FLT-uR-OtG"/>
                     <connections>
+                        <outlet property="tvPerros" destination="8Zs-WP-pAx" id="sJM-dn-6Fe"/>
                         <segue destination="BYZ-38-t0r" kind="show" id="Yfe-Gh-S4h"/>
                     </connections>
                 </viewController>

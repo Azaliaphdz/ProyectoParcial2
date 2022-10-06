@@ -10,4 +10,6 @@ import UIKit
 
 class CeldaDatoController : UITableViewCell {
     
+    @IBOutlet weak var lblTitulo: UILabel!
+    @IBOutlet weak var lblDesc: UILabel!
 }

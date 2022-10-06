@@ -10,6 +10,10 @@ import UIKit
 
 class PerrosController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var perros: [Perro] = []
+    var dato1: [Dato] = []
+    var dato2: [Dato] = []
+    var dato3: [Dato] = []
+    var dato4: [Dato] = []
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 111
@@ -32,13 +36,21 @@ class PerrosController: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         return celda
     }
+    @IBOutlet weak var tvPerros: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        perros.append(Perro(origen: "Origen de México", nombre: "Chihuahua", tamano: "tamaño pequeño", icono: "raza-chihuahua"))
-        perros.append(Perro(origen: "Originario de Canada", nombre: "Labrador Retriever", tamano: "tamaño grande", icono: "raza-chihuahua"))
-        perros.append(Perro(origen: "Originario de Alemania", nombre: "Pastor alemán", tamano: "tamaño grande", icono: "raza-chihuahua"))
-        perros.append(Perro(origen: "Originario de Reino Unido", nombre: "Golden Retriever", tamano: "tamaño grande", icono: "raza-chihuahua"))
+        
+        dato1.append(Dato(titulo: <#T##String#>, desc: <#T##String#>))
+        
+        perros.append(Perro(origen: "Origen de México", nombre: "Chihuahua", tamano: "tamaño pequeño", icono: "raza-chihuahua", datos: dato1))
+        perros.append(Perro(origen: "Originario de Canada", nombre: "Labrador Retriever", tamano: "tamaño grande", icono: "raza-chihuahua", datos: dato2))
+        perros.append(Perro(origen: "Originario de Alemania", nombre: "Pastor alemán", tamano: "tamaño grande", icono: "raza-chihuahua", datos: dato3))
+        perros.append(Perro(origen: "Originario de Reino Unido", nombre: "Golden Retriever", tamano: "tamaño grande", icono: "raza-chihuahua", datos: dato4))
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destino = segue.destination as! DetallesPerroController
+        destino.perro = perros[tvPerros.indexPathForSelectedRow!.row]
+    }
 }
