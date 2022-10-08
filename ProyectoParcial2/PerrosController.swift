@@ -12,8 +12,7 @@ class PerrosController: UIViewController, UITableViewDelegate, UITableViewDataSo
     var perros: [Perro] = []
     var dato1: [Dato] = []
     var dato2: [Dato] = []
-    var dato3: [Dato] = []
-    var dato4: [Dato] = []
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 111
@@ -33,6 +32,12 @@ class PerrosController: UIViewController, UITableViewDelegate, UITableViewDataSo
         celda.lblTamano.text = perros[indexPath.row].tamano
         
         celda.imgIcono.image = UIImage(named: perros[indexPath.row].icono)
+        //celda.imgIcono.layer.cornerRadius = 2
+        //celda.imgIcono.layer.borderWidth = 2
+        celda.imgIcono.layer.cornerRadius = celda.imgIcono.frame.size.width / 12
+        celda.imgIcono.clipsToBounds = true
+        celda.imgIcono.layer.borderWidth = 2
+        celda.imgIcono.layer.borderColor = UIColor(red: 175/255, green: 255/255, blue: 253/255, alpha: 1).cgColor
         
         return celda
     }
@@ -41,13 +46,15 @@ class PerrosController: UIViewController, UITableViewDelegate, UITableViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dato1.append(Dato(titulo: <#T##String#>, desc: <#T##String#>))
+        dato1.append(Dato(titulo: "Salud", desc: "Puede padecer desplazamientos temporales de la rótula (luxaciones de rótula) y problemas de tráquea. La forma de la cabeza hace que tiendan a sufrir hidrocefalias (agua en el cerebro) y ciertos trastornos oculares."))
+        dato2.append(Dato(titulo: "Salud", desc: "Puede padecer desplazamientos temporales de la rótula (luxaciones de rótula) y problemas de tráquea. La forma de la cabeza hace que tiendan a sufrir hidrocefalias (agua en el cerebro) y ciertos trastornos oculares."))
         
-        perros.append(Perro(origen: "Origen de México", nombre: "Chihuahua", tamano: "tamaño pequeño", icono: "raza-chihuahua", datos: dato1))
-        perros.append(Perro(origen: "Originario de Canada", nombre: "Labrador Retriever", tamano: "tamaño grande", icono: "raza-chihuahua", datos: dato2))
-        perros.append(Perro(origen: "Originario de Alemania", nombre: "Pastor alemán", tamano: "tamaño grande", icono: "raza-chihuahua", datos: dato3))
-        perros.append(Perro(origen: "Originario de Reino Unido", nombre: "Golden Retriever", tamano: "tamaño grande", icono: "raza-chihuahua", datos: dato4))
+        perros.append(Perro(origen: "México", nombre: "bulldog frances", tamano: "Mediano", icono: "raza-bulldog", altura: "Entre y 23 cm", peso: "2.5 a 4.7 kg.", pelaje: "Suave, fino y corto", espe: "De 12 a 20 años", caracter: "Alegre, sobreprotector, inquieto, valiente", sabias: "Son los perros más pequeños que hay, su cráneo tiene forma de manzana.", color1: "color1", color2: "color2", color3: "color3", color4: "color4", color5: "color5", principal: "raza-bulldog2", datos: dato1))
+        
+        perros.append(Perro(origen: "México", nombre: "Chihuahua", tamano: "Pequeño", icono: "raza-chihuahua", altura: "Entre 15 y 23 cm", peso: "1.8 a 2.7 kg.", pelaje: "Suave, fino y corto", espe: "De 12 a 20 años", caracter: "Alegre, sobreprotector, inquieto, valiente", sabias: "Son los perros más pequeños que hay, su cráneo tiene forma de manzana.", color1: "color1", color2: "color2", color3: "color3", color4: "color4", color5: "color5", principal: "raza-chihuahua2", datos: dato2))
+        
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destino = segue.destination as! DetallesPerroController

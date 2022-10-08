@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26EF8F8E28F218A4008727CD /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26EF8F8A28F218A4008727CD /* Roboto-Bold.ttf */; };
+		26EF8F8F28F218A4008727CD /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26EF8F8B28F218A4008727CD /* Roboto-Italic.ttf */; };
+		26EF8F9028F218A4008727CD /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26EF8F8C28F218A4008727CD /* Roboto-Regular.ttf */; };
+		26EF8F9128F218A4008727CD /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26EF8F8D28F218A4008727CD /* Roboto-Black.ttf */; };
 		3D0F384C28EC8E260058795E /* PerrosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0F384B28EC8E260058795E /* PerrosController.swift */; };
 		3D0F384E28EC8FD70058795E /* Perro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0F384D28EC8FD70058795E /* Perro.swift */; };
 		3D0F385028EC92600058795E /* CeldaPerroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0F384F28EC92600058795E /* CeldaPerroController.swift */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26EF8F8A28F218A4008727CD /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		26EF8F8B28F218A4008727CD /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		26EF8F8C28F218A4008727CD /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		26EF8F8D28F218A4008727CD /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		3D0F384B28EC8E260058795E /* PerrosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerrosController.swift; sourceTree = "<group>"; };
 		3D0F384D28EC8FD70058795E /* Perro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perro.swift; sourceTree = "<group>"; };
 		3D0F384F28EC92600058795E /* CeldaPerroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPerroController.swift; sourceTree = "<group>"; };
@@ -109,6 +117,10 @@
 		3DAE1EC528E5F5B20036AD6E /* ProyectoParcial2 */ = {
 			isa = PBXGroup;
 			children = (
+				26EF8F8D28F218A4008727CD /* Roboto-Black.ttf */,
+				26EF8F8A28F218A4008727CD /* Roboto-Bold.ttf */,
+				26EF8F8B28F218A4008727CD /* Roboto-Italic.ttf */,
+				26EF8F8C28F218A4008727CD /* Roboto-Regular.ttf */,
 				3DAE1EC628E5F5B20036AD6E /* AppDelegate.swift */,
 				3DAE1EC828E5F5B20036AD6E /* ViewController.swift */,
 				3DAE1ECA28E5F5B20036AD6E /* Main.storyboard */,
@@ -247,8 +259,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26EF8F9028F218A4008727CD /* Roboto-Regular.ttf in Resources */,
 				3DAE1ED128E5F5B40036AD6E /* LaunchScreen.storyboard in Resources */,
 				3DAE1ECE28E5F5B40036AD6E /* Assets.xcassets in Resources */,
+				26EF8F8F28F218A4008727CD /* Roboto-Italic.ttf in Resources */,
+				26EF8F9128F218A4008727CD /* Roboto-Black.ttf in Resources */,
+				26EF8F8E28F218A4008727CD /* Roboto-Bold.ttf in Resources */,
 				3DAE1ECC28E5F5B20036AD6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProyectoParcial2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProyectoParcial2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

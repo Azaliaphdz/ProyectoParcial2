@@ -43,6 +43,12 @@ class DetallesPerroController : UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var imgColor4: UIImageView!
     @IBOutlet weak var imgColor5: UIImageView!
     
+    @IBOutlet weak var imgAltura: UIImageView!
+    @IBOutlet weak var imgPelaje: UIImageView!
+    @IBOutlet weak var imgPeso: UIImageView!
+    @IBOutlet weak var imgOrigen: UIImageView!
+    
+   //let cornerRadius: CGFloat = 25.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +56,18 @@ class DetallesPerroController : UIViewController, UITableViewDelegate, UITableVi
         if perro != nil{
             self.title = perro?.nombre
             imgPrincipal.image = UIImage(named: perro!.principal)
+            
+            imgPrincipal.layer.cornerRadius = 25.0
+
+            imgPrincipal.clipsToBounds = true
+            
+            //imgPrincipal.layer.shadowColor = UIColor.darkGray.cgColor
+            //imgPrincipal.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
+            //imgPrincipal.layer.shadowRadius = 25.0
+            //imgPrincipal.layer.shadowOpacity = 0.9
+   
+            //imgPrincipal.layer.borderWidth = 1
+            
             lblAltura.text = perro?.altura
             lblPeso.text = perro?.peso
             lblPelaje.text = perro?.pelaje
@@ -61,7 +79,40 @@ class DetallesPerroController : UIViewController, UITableViewDelegate, UITableVi
             imgColor3.image = UIImage(named: perro!.color3)
             imgColor4.image = UIImage(named: perro!.color4)
             imgColor5.image = UIImage(named: perro!.color5)
- 
+
+            imgColor1.layer.cornerRadius = 15
+            imgColor1.layer.borderWidth = 1
+            imgColor1.layer.borderColor = UIColor.gray.cgColor
+            
+            imgColor2.layer.cornerRadius = 15
+            imgColor2.layer.borderWidth = 1
+            imgColor2.layer.borderColor = UIColor.gray.cgColor
+            
+            imgColor3.layer.cornerRadius = 15
+            imgColor3.layer.borderWidth = 1
+            imgColor3.layer.borderColor = UIColor.gray.cgColor
+            
+            imgColor4.layer.cornerRadius = 15
+            imgColor4.layer.borderWidth = 1
+            imgColor4.layer.borderColor = UIColor.gray.cgColor
+            
+            imgColor5.layer.cornerRadius = 15
+            imgColor5.layer.borderWidth = 1
+            imgColor5.layer.borderColor = UIColor.gray.cgColor
+            
+            imgAltura.layer.cornerRadius = imgAltura.frame.size.width / 12
+            imgAltura.clipsToBounds = true
+            
+            imgPelaje.layer.cornerRadius = imgAltura.frame.size.width / 12
+            imgPelaje.clipsToBounds = true
+            
+            imgPeso.layer.cornerRadius = imgAltura.frame.size.width / 12
+            imgPeso.clipsToBounds = true
+            
+            imgOrigen.layer.cornerRadius = imgAltura.frame.size.width / 12
+            imgOrigen.clipsToBounds = true
+            
+            
         }else{
         self.title = "Detalles de Perro"
         }
