@@ -47,11 +47,22 @@ class DetallesPerroController : UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var imgColor5: UIImageView!
     
     @IBOutlet weak var imgAltura: UIImageView!
-    @IBOutlet weak var imgPelaje: UIImageView!
-    @IBOutlet weak var imgPeso: UIImageView!
-    @IBOutlet weak var imgOrigen: UIImageView!
+    @IBOutlet weak var imgIconoAltura: UIImageView!
     
+    @IBOutlet weak var imgPelaje: UIImageView!
+    @IBOutlet weak var imgIconoPelaje: UIImageView!
+    
+    @IBOutlet weak var imgPeso: UIImageView!
+    @IBOutlet weak var imgIconoPeso: UIImageView!
+    
+    @IBOutlet weak var imgOrigen: UIImageView!
+    @IBOutlet weak var imgIconoOrigen: UIImageView!
+    
+    //tableview
     @IBOutlet weak var tvDatos: UITableView!
+    
+    //para ajustar tamaños
+    @IBOutlet weak var lblAltura2: UILabel!
     
    //let cornerRadius: CGFloat = 25.0
     
@@ -75,7 +86,27 @@ class DetallesPerroController : UIViewController, UITableViewDelegate, UITableVi
    
             //imgPrincipal.layer.borderWidth = 1
             
+            imgIconoAltura.layer.cornerRadius = 15
+            imgIconoAltura.clipsToBounds = true
+            
+            imgIconoPelaje.layer.cornerRadius = 15
+            imgIconoPelaje.clipsToBounds = true
+            
+            imgIconoPeso.layer.cornerRadius = 15
+            imgIconoPeso.clipsToBounds = true
+            
+            imgIconoOrigen.layer.cornerRadius = 15
+            imgIconoOrigen.clipsToBounds = true
+            
             lblAltura.text = perro?.altura
+            lblAltura.adjustsFontSizeToFitWidth = true
+            lblAltura.minimumScaleFactor = 0.85
+            lblAltura.numberOfLines = 0
+            
+            lblAltura2.adjustsFontSizeToFitWidth = true
+            lblAltura2.minimumScaleFactor = 0.8
+            lblAltura2.numberOfLines = 0
+            
             lblPeso.text = perro?.peso
             lblPelaje.text = perro?.pelaje
             lblOrigen.text = perro?.altura
