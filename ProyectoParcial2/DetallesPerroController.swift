@@ -23,6 +23,9 @@ class DetallesPerroController : UIViewController, UITableViewDelegate, UITableVi
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaDato") as! CeldaDatoController
         celda.lblTitulo.text = perro!.datos[indexPath.row].titulo
         celda.lblDesc.text = perro!.datos[indexPath.row].desc
+        celda.backgroundColor = .clear
+        celda.layer.cornerRadius = 10
+        celda.clipsToBounds = true
         return celda
     }
     
@@ -48,6 +51,8 @@ class DetallesPerroController : UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var imgPeso: UIImageView!
     @IBOutlet weak var imgOrigen: UIImageView!
     
+    @IBOutlet weak var tvDatos: UITableView!
+    
    //let cornerRadius: CGFloat = 25.0
     
     override func viewDidLoad() {
@@ -55,6 +60,8 @@ class DetallesPerroController : UIViewController, UITableViewDelegate, UITableVi
         
         if perro != nil{
             self.title = perro?.nombre
+            tvDatos.backgroundColor = .clear
+            
             imgPrincipal.image = UIImage(named: perro!.principal)
             
             imgPrincipal.layer.cornerRadius = 25.0
@@ -82,23 +89,23 @@ class DetallesPerroController : UIViewController, UITableViewDelegate, UITableVi
 
             imgColor1.layer.cornerRadius = 15
             imgColor1.layer.borderWidth = 1
-            imgColor1.layer.borderColor = UIColor.gray.cgColor
+            imgColor1.layer.borderColor = UIColor.lightGray.cgColor
             
             imgColor2.layer.cornerRadius = 15
             imgColor2.layer.borderWidth = 1
-            imgColor2.layer.borderColor = UIColor.gray.cgColor
+            imgColor2.layer.borderColor = UIColor.lightGray.cgColor
             
             imgColor3.layer.cornerRadius = 15
             imgColor3.layer.borderWidth = 1
-            imgColor3.layer.borderColor = UIColor.gray.cgColor
+            imgColor3.layer.borderColor = UIColor.lightGray.cgColor
             
             imgColor4.layer.cornerRadius = 15
             imgColor4.layer.borderWidth = 1
-            imgColor4.layer.borderColor = UIColor.gray.cgColor
+            imgColor4.layer.borderColor = UIColor.lightGray.cgColor
             
             imgColor5.layer.cornerRadius = 15
             imgColor5.layer.borderWidth = 1
-            imgColor5.layer.borderColor = UIColor.gray.cgColor
+            imgColor5.layer.borderColor = UIColor.lightGray.cgColor
             
             imgAltura.layer.cornerRadius = imgAltura.frame.size.width / 12
             imgAltura.clipsToBounds = true
