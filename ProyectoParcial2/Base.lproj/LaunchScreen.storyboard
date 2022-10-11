@@ -15,12 +15,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fondo2" translatesAutoresizingMaskIntoConstraints="NO" id="2gO-kN-DGL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo2" translatesAutoresizingMaskIntoConstraints="NO" id="2gO-kN-DGL">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_Dog_Wiki" translatesAutoresizingMaskIntoConstraints="NO" id="xbS-AI-hm8">
+                                <rect key="frame" x="109" y="371.5" width="196" height="153"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2gO-kN-DGL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JTs-hx-H12"/>
+                            <constraint firstItem="2gO-kN-DGL" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="PUK-xs-Fc1"/>
+                            <constraint firstItem="2gO-kN-DGL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="RdN-Gj-fqh"/>
+                            <constraint firstItem="xbS-AI-hm8" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.47343" id="XZo-Wt-iBg"/>
+                            <constraint firstItem="xbS-AI-hm8" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.170759" id="ajQ-wk-jUN"/>
+                            <constraint firstItem="xbS-AI-hm8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ccS-No-AXF"/>
+                            <constraint firstItem="xbS-AI-hm8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="n4R-7p-zSu"/>
+                            <constraint firstItem="2gO-kN-DGL" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="zDY-J0-fLl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -30,6 +42,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Logo_Dog_Wiki" width="1065" height="845"/>
         <image name="fondo2" width="1637" height="3456"/>
     </resources>
 </document>

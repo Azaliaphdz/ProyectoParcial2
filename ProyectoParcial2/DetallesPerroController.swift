@@ -104,15 +104,35 @@ class DetallesPerroController : UIViewController, UITableViewDelegate, UITableVi
             lblAltura.minimumScaleFactor = 0.75
             lblAltura.numberOfLines = 0
             
-            lblAltura2.adjustsFontSizeToFitWidth = true
-            lblAltura2.minimumScaleFactor = 0.75
-            lblAltura2.numberOfLines = 0
+            //lblAltura2.adjustsFontSizeToFitWidth = true
+            //lblAltura2.minimumScaleFactor = 0.75
+            //lblAltura2.numberOfLines = 0
             
             lblPeso.text = perro?.peso
+            lblPeso.adjustsFontSizeToFitWidth = true
+            lblPeso.minimumScaleFactor = 0.75
+            lblPeso.numberOfLines = 0
+            
             lblPelaje.text = perro?.pelaje
+            lblPelaje.adjustsFontSizeToFitWidth = true
+            lblPelaje.minimumScaleFactor = 0.75
+            lblPelaje.numberOfLines = 0
+            
             lblOrigen.text = perro?.altura
+            lblOrigen.adjustsFontSizeToFitWidth = true
+            lblOrigen.minimumScaleFactor = 0.75
+            lblOrigen.numberOfLines = 0
+            
             lblCaracter.text = perro?.caracter
+            lblCaracter.adjustsFontSizeToFitWidth = true
+            lblCaracter.minimumScaleFactor = 0.75
+            lblCaracter.numberOfLines = 0
+            
             lblSabiasQue.text = perro?.sabias
+            lblSabiasQue.adjustsFontSizeToFitWidth = true
+            lblSabiasQue.minimumScaleFactor = 0.75
+            lblSabiasQue.numberOfLines = 0
+            
             imgColor1.image = UIImage(named: perro!.color1)
             imgColor2.image = UIImage(named: perro!.color2)
             imgColor3.image = UIImage(named: perro!.color3)

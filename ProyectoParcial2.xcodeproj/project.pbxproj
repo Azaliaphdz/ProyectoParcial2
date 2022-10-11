@@ -52,7 +52,7 @@
 		3D0F384B28EC8E260058795E /* PerrosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerrosController.swift; sourceTree = "<group>"; };
 		3D0F384D28EC8FD70058795E /* Perro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perro.swift; sourceTree = "<group>"; };
 		3D0F384F28EC92600058795E /* CeldaPerroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPerroController.swift; sourceTree = "<group>"; };
-		3DAE1EC328E5F5B20036AD6E /* ProyectoParcial2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoParcial2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAE1EC328E5F5B20036AD6E /* Dog wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog wiki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DAE1EC628E5F5B20036AD6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DAE1EC828E5F5B20036AD6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3DAE1ECB28E5F5B20036AD6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		3DAE1EC428E5F5B20036AD6E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3DAE1EC328E5F5B20036AD6E /* ProyectoParcial2.app */,
+				3DAE1EC328E5F5B20036AD6E /* Dog wiki.app */,
 				3DAE1ED728E5F5B40036AD6E /* ProyectoParcial2Tests.xctest */,
 				3DAE1EE228E5F5B40036AD6E /* ProyectoParcial2UITests.xctest */,
 			);
@@ -172,7 +172,7 @@
 			);
 			name = ProyectoParcial2;
 			productName = ProyectoParcial2;
-			productReference = 3DAE1EC328E5F5B20036AD6E /* ProyectoParcial2.app */;
+			productReference = 3DAE1EC328E5F5B20036AD6E /* Dog wiki.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3DAE1ED628E5F5B40036AD6E /* ProyectoParcial2Tests */ = {
@@ -480,7 +480,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.ulsa.ProyectoParcial2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dog wiki";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -498,7 +498,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.ulsa.ProyectoParcial2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dog wiki";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
