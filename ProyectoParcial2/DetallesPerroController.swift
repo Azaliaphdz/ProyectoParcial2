@@ -88,6 +88,7 @@ class DetallesPerroController : UIViewController, UITableViewDelegate, UITableVi
             
             imgIconoAltura.layer.cornerRadius = 15
             imgIconoAltura.clipsToBounds = true
+
             
             imgIconoPelaje.layer.cornerRadius = 15
             imgIconoPelaje.clipsToBounds = true
@@ -100,11 +101,11 @@ class DetallesPerroController : UIViewController, UITableViewDelegate, UITableVi
             
             lblAltura.text = perro?.altura
             lblAltura.adjustsFontSizeToFitWidth = true
-            lblAltura.minimumScaleFactor = 0.85
+            lblAltura.minimumScaleFactor = 0.75
             lblAltura.numberOfLines = 0
             
             lblAltura2.adjustsFontSizeToFitWidth = true
-            lblAltura2.minimumScaleFactor = 0.8
+            lblAltura2.minimumScaleFactor = 0.75
             lblAltura2.numberOfLines = 0
             
             lblPeso.text = perro?.peso
